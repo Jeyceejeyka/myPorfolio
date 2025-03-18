@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | 3D Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 3D Scene Container -->
+    <div id="scene-container"></div>
+    
+    <!-- Content -->
+    <div class="content">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Your Name</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="hero-content">
+                            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+                            <p class="role">Frontend Developer | UI/UX Designer | Creative Thinker</p>
+                            <p class="lead mb-4">I craft beautiful, responsive, and user-friendly web experiences that engage and delight users.</p>
+                            <div class="d-flex flex-wrap">
+                                <a href="#portfolio" class="btn btn-custom">View My Work</a>
+                                <a href="#contact" class="btn btn-custom btn-outline">Contact Me</a>
+                            </div>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <div class="separator"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="about-content">
+                            <h3 class="mb-4">Who I Am</h3>
+                            <p>I'm a passionate frontend developer and UI/UX designer with over 5 years of experience creating engaging digital experiences. I specialize in building modern, responsive web applications that are not only visually stunning but also highly functional and user-friendly.</p>
+                            <p>My approach combines technical expertise with creative problem-solving, allowing me to build solutions that exceed client expectations and drive business results.</p>
+                            <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or hiking in the great outdoors.</p>
+                            <a href="#" class="btn btn-custom mt-3">Download Resume</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <h3 class="mb-4">Personal Info</h3>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <h5>Name:</h5>
+                                    <p>Your Name</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h5>Email:</h5>
+                                    <p>your.email@example.com</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h5>Phone:</h5>
+                                    <p>+1 123 456 7890</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h5>Location:</h5>
+                                    <p>New York, USA</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h5>Availability:</h5>
+                                    <p>Full-time</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h5>Experience:</h5>
+                                    <p>5+ Years</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>My Skills</h2>
+                    <div class="separator"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>HTML5 & CSS3</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>JavaScript</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>React.js</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>UI/UX Design</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Node.js</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Three.js</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Figma</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Responsive Design</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>My Portfolio</h2>
+                    <div class="separator"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="/api/placeholder/400/320" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">E-Commerce Website</h5>
+                                <div class="card-tags">
+                                    <span class="tag">React.js</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">MongoDB</span>
+                                </div>
+                                <p class="card-text">A responsive e-commerce platform with advanced filtering, user authentication, and payment integration.</p>
+                                <a href="#" class="btn btn-custom btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="/api/placeholder/400/320" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">3D Product Configurator</h5>
+                                <div class="card-tags">
+                                    <span class="tag">Three.js</span>
+                                    <span class="tag">WebGL</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <p class="card-text">An interactive 3D product configurator allowing users to customize and visualize products in real-time.</p>
+                                <a href="#" class="btn btn-custom btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="/api/placeholder/400/320" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Finance Dashboard</h5>
+                                <div class="card-tags">
+                                    <span class="tag">React.js</span>
+                                    <span class="tag">D3.js</span>
+                                    <span class="tag">Firebase</span>
+                                </div>
+                                <p class="card-text">A comprehensive financial dashboard with real-time data visualization and analytics.</p>
+                                <a href="#" class="btn btn-custom btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="/api/placeholder/400/320" class="card-img-top" alt="Project 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Fitness Tracking App</h5>
+                                <div class="card-tags">
+                                    <span class="tag">React Native</span>
+                                    <span class="tag">Redux</span>
+                                    <span class="tag">GraphQL</span>
+                                </div>
+                                <p class="card-text">A mobile application for tracking workouts, nutrition, and personal fitness goals.</p>
+                                <a href="#" class="btn btn-custom btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="/api/placeholder/400/320" class="card-img-top" alt="Project 5">
+                            <div class="card-body">
+                                <h5 class="card-title">AI-Powered Chatbot</h5>
+                                <div class="card-tags">
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">NLP</span>
+                                    <span class="tag">API Integration</span>
+                                </div>
+                                <p class="card-text">An intelligent chatbot with natural language processing capabilities for customer support.</p>
+                                <a href="#" class="btn btn-custom btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="/api/placeholder/400/320" class="card-img-top" alt="Project 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Real Estate Platform</h5>
+                                <div class="card-tags">
+                                    <span class="tag">Vue.js</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">PostgreSQL</span>
+                                </div>
+                                <p class="card-text">A property listing platform with advanced search filters and interactive maps.</p>
+                                <a href="#" class="btn btn-custom btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>My Experience</h2>
+                    <div class="separator"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="mb-4">Work Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022 - Present</div>
+                                <h4 class="timeline-title">Senior Frontend Developer</h4>
+                                <p class="timeline-subtitle">Tech Innovations Inc.</p>
+                                <p>Led the development of multiple high-profile web applications, managing a team of 5 developers. Implemented best practices that improved site performance by 40%.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020 - 2022</div>
+                                <h4 class="timeline-title">Frontend Developer</h4>
+                                <p class="timeline-subtitle">Digital Solutions Ltd.</p>
+                                <p>Developed responsive web applications for enterprise clients, collaborating with designers and backend developers to deliver seamless user experiences.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2018 - 2020</div>
+                                <h4 class="timeline-title">UI/UX Designer</h4>
+                                <p class="timeline-subtitle">Creative Agency</p>
+                                <p>Created user-centered designs for websites and mobile applications. Conducted user research and testing to improve digital products.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="mb-4">Education & Certifications</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2014 - 2018</div>
+                                <h4 class="timeline-title">Bachelor of Science in Computer Science</h4>
+                                <p class="timeline-subtitle">University of Technology</p>
+                                <p>Graduated with honors. Specialized in web development and user interface design.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022</div>
+                                <h4 class="timeline-title">Certified Frontend Developer</h4>
+                                <p class="timeline-subtitle">Tech Certification Board</p>
+                                <p>Advanced certification in modern frontend development technologies and methodologies.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2021</div>
+                                <h4 class="timeline-title">UI/UX Design Certification</h4>
+                                <p class="timeline-subtitle">Design Institute</p>
+                                <p>Specialized training in user experience research, information architecture, and interaction design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Get In Touch</h2>
+                    <div class="separator"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="contact-form">
+                            <form>
+                                <div class="container">
+                                    <div class="section-title">
+                                        <h2>Get In Touch</h2>
+                                        <div class="separator"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4 mb-lg-0">
+                                            <div class="contact-form">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Your Name" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" placeholder="Your Email" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Subject">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-custom">Send Message</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="contact-info">
+                                                <div class="contact-item">
+                                                    <div class="contact-icon">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                    </div>
+                                                    <div class="contact-details">
+                                                        <h5>Location</h5>
+                                                        <p>New York, NY 10001, USA</p>
+                                                    </div>
+                                                </div>
+                                                <div class="contact-item">
+                                                    <div class="contact-icon">
+                                                        <i class="fas fa-envelope"></i>
+                                                    </div>
+                                                    <div class="contact-details">
+                                                        <h5>Email</h5>
+                                                        <p>your.email@example.com</p>
+                                                    </div>
+                                                </div>
+                                                <div class="contact-item">
+                                                    <div class="contact-icon">
+                                                        <i class="fas fa-phone"></i>
+                                                    </div>
+                                                    <div class="contact-details">
+                                                        <h5>Phone</h5>
+                                                        <p>+1 123 456 7890</p>
+                                                    </div>
+                                                </div>
+                                                <div class="contact-item">
+                                                    <div class="contact-icon">
+                                                        <i class="fas fa-globe"></i>
+                                                    </div>
+                                                    <div class="contact-details">
+                                                        <h5>Website</h5>
+                                                        <p>www.yourwebsite.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </section>
+                                
+                                <!-- Footer -->
+                                <footer>
+                                    <div class="container">
+                                        <div class="footer-links">
+                                            <a href="#home">Home</a>
+                                            <a href="#about">About</a>
+                                            <a href="#skills">Skills</a>
+                                            <a href="#portfolio">Portfolio</a>
+                                            <a href="#experience">Experience</a>
+                                            <a href="#contact">Contact</a>
+                                        </div>
+                                        <div class="social-icons">
+                                            <a href="#"><i class="fab fa-github"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                            <a href="#"><i class="fab fa-behance"></i></a>
+                                        </div>
+                                        <div class="copyright">
+                                            <p>&copy; 2025 Your Name. All rights reserved.</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                                </div>
+                                
+                                <!-- Scripts -->
+                                <!-- Bootstrap JS -->
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+                                <!-- Three.js -->
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.151.3/three.min.js"></script>
+                                <!-- Custom JS -->
+                                <script src="index.js">                                   
+                                </script>
+                                </body>
+                                </html>
